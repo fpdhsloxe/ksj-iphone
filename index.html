@@ -3079,6 +3079,7 @@ function addNotif(a, buzz) {
         openApp(st.app);
       } else {
         st.view = 'none';
+                $('status').style.color = '';
         showScr('s-home');
       }
     };
@@ -3126,7 +3127,6 @@ const APP_VIEWS = {
   // 여기에 계속 추가
 ];
           $('status').style.color = '';
-    $('status').style.color = '#000';
     setAppView('', `<div id="safari">
       <div class="sf-h">즐겨찾기</div>
       <div class="sf-fav">
@@ -3727,6 +3727,7 @@ $('screen').appendChild($('banner'));
       $('kk-menu').classList.remove('on');
       $('s-app').classList.remove('kk-list', 'kk-room');
       st.view = 'none';
+            $('status').style.color = '';
       showScr('s-home');
     }
 
